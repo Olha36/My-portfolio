@@ -84,6 +84,7 @@ p {
 
 .social-links {
     width: 300px;
+    text-align: center;
 }
 .social-links a {
     cursor: pointer;
@@ -259,5 +260,59 @@ ul li::before {
     }
     .phone-email  p {
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 912px) {
+    body::after {
+        background-position: bottom 32px right 50%;
+        background-size: 540px;
+    }
+}
+@media screen and (max-width: 540px) {
+    body::after {
+        background-size: 420px;
+    }
+    .mask-group {
+        width: 195px;
+        height: 195px;
+    }
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+    .hero-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-description {
+        margin: 0;
+    }
+    .hero-description p:last-child {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 412px) {
+    .image1 {
+        width: 183px;
+        height: 93px;
+    }
+}
+@media screen and (max-width: 412px) {
+    body:after {
+        background-position: bottom 8% right 50%;
+        background-size: 345px;
+    }
+    .projects-links h2 {
+        font-size: 24px;
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 360px) {
+    body::after {
+        background-position: bottom 9% right 50%;
+        background-size: 298px;
     }
 }
