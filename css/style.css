@@ -158,3 +158,22 @@ p {
     margin-bottom: 30px;
     margin-right: 30px;
 }
+.flex-links {
+    display: flex;
+    flex-direction: column;
+}
+.flex-links a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul li {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+ul li::before {
+    content: '🔑';
+    color: yellow;
+    margin-right: 5px;
+}
