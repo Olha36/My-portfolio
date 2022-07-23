@@ -1,0 +1,96 @@
+body {
+    font-family: Roboto;
+    background-color: #20202D;
+    position: relative;
+    z-index: 1;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom 32px right 60px;
+    background-size: 650px;
+    opacity: 0.4;
+    z-index: 0;
+}
+h1, h2, h3, h4, p {
+    color: #FFFFFF;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.59px;
+}
+
+h2 {
+    font-weight: 700;
+    Font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 84px;
+}
+
+h3 {
+    margin-bottom: 16px;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h4 {
+    font-style: bold;;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.container {
+    width: 95%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 20px;
+}
+
+.hero-header {
+    width: 100%;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 139px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-links {
+    width: 300px;
+}
+.social-links a {
+    cursor: pointer;
+    text-align: center;
+}
+.social-links a > img {
+   width: 30px;
+   height: 29px;
+   background-color: #fff;
+}
