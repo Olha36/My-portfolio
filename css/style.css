@@ -13,7 +13,7 @@ body::after {
     height: 100%;
     background-image: url(../img/rose.jpg);
     background-repeat: no-repeat;
-    background-position: bottom 32px right 60px;
+    background-position: bottom 32px right 20%;
     background-size: 650px;
     opacity: 0.4;
     z-index: 0;
@@ -176,4 +176,88 @@ ul li::before {
     content: '🔑';
     color: yellow;
     margin-right: 5px;
+}
+.contacts h2 {
+    margin: 80px 0 84px;
+}
+.contacts-information a {
+    color: rgba(165, 165, 165, 1);
+    text-decoration: underline;
+}
+.phone-email h3 {
+    margin: 53px 0 15px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+}
+
+.socials {
+    margin-right: 37px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 42px;
+}
+
+.contacts-information .social-links {
+    width: 100px;
+    margin: 20px 0 74px;
+}
+.contacts-block {
+    padding-bottom: 148px;
+}
+
+
+/* media */
+@media screen and (max-width: 991px) {
+    .hero-header {
+        width: 90%;
+    }
+    .hero-content {
+        flex-direction: column-reverse;
+    }
+    .hero-description {
+        margin-top: 62px;
+        text-align: center;
+    }
+    .description {
+        margin: 0 auto;
+    }
+    .hero-description h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .hero-description h2 {
+        font-size: 16px;
+    }
+    .projects h2 {
+        text-align: center;
+    }
+    .projects-links h2 {
+        text-align: center;
+    }
+    ul {
+        margin: 0 auto;
+    }
+    .contacts {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .contacts h2 {
+        text-align: center;
+    }
+    .contacts-block {
+        display: flex;
+        justify-content: center;
+    }
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .phone-email  p {
+        font-size: 12px;
+    }
 }
