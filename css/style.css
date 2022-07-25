@@ -13,8 +13,8 @@ body::after {
     height: 100%;
     background-image: url(../img/rose.jpg);
     background-repeat: no-repeat;
-    background-position: bottom 32px right 20%;
-    background-size: 650px;
+    background-position: bottom 4% right 4%;
+    background-size: 480px;
     opacity: 0.4;
     z-index: 0;
 }
@@ -149,23 +149,33 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 76px;
+    flex-wrap: wrap;
 }
-
+.image-link {
+    display: flex;
+    flex-direction: column;
+}
+.image-link a {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
 .image1 {
     width: 366px;
     height: 186px;
     margin-bottom: 30px;
     margin-right: 30px;
 }
-.flex-links {
+/* .flex-links {
     display: flex;
     flex-direction: column;
 }
 .flex-links a {
     cursor: pointer;
     text-decoration: none;
-}
-ul li {
+} */
+/* ul li {
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 16px;
@@ -175,7 +185,7 @@ ul li::before {
     content: '🔑';
     color: yellow;
     margin-right: 5px;
-}
+} */
 .contacts h2 {
     margin: 80px 0 84px;
 }
