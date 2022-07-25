@@ -1,10 +1,10 @@
 body {
     font-family: Roboto;
-    background-color: #20202D;
+    background-color: #191970;
     position: relative;
     z-index: 1;
 }
-body::after {
+/* body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -17,7 +17,7 @@ body::after {
     background-size: 650px;
     opacity: 0.4;
     z-index: 0;
-}
+} */
 h1, h2, h3, h4, p {
     color: #FFFFFF;
 }
@@ -108,11 +108,12 @@ p {
     line-height: 28px;
     margin-bottom: 14px;
 }
-
 .hero-description .description {
     margin-bottom: 38px;
 }
-
+.hero-description p:last-child {
+    width: 70%;
+}
 .hero-description #text {
     position: relative;
     margin: 24px 42px;
@@ -139,7 +140,6 @@ p {
 .img {
     width: 400px;
     height: 400px;
-    background: url(../img/avatar.png);
 }
 .projects {
     width: 100%;
@@ -215,8 +215,12 @@ ul li::before {
 
 /* media */
 @media screen and (max-width: 991px) {
+    .flex-between {
+        justify-content: space-evenly;
+    }
     .hero-header {
         width: 90%;
+        margin: 50px auto;
     }
     .hero-content {
         flex-direction: column-reverse;
@@ -280,6 +284,9 @@ ul li::before {
         background-size: 294px;
         background-position: bottom 9% right 50%;
     }
+    .hero-header {
+        margin: 50px auto 30px;
+    }
     .mask-group {
         width: 195px;
         height: 195px;
@@ -292,6 +299,7 @@ ul li::before {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 254px;
     }
     .hero-description {
         margin: 0;
@@ -330,7 +338,7 @@ ul li::before {
         background-position: bottom 8.3% right 50%;
         background-size: 254px;
     }
-    .hero-header {
-        margin: 50px -50px 139px;
-    }
+    /* .hero-header {
+        margin: 50px -50px 30px;
+    } */
 }
