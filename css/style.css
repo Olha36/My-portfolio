@@ -118,11 +118,29 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    animation: 12s infinite fadeInOut1;
+    animation: show 12s infinite;
     opacity: 0;
     z-index: 1;
 }
-@keyframes fadeInOut1 {
+@keyframes show {
+    0% {
+        opacity: 0;
+        z-index: 5;
+    }
+    20% {
+        opacity: 1;
+        z-index: 4;
+    }
+    80% {
+        z-index: 2;
+        opacity: 0;
+    }
+    100% {
+        opacity:0;
+        z-index: 1;
+    }
+} 
+/* @keyframes fadeInOut1 {
     0% {
      z-index: 4;
     }
@@ -177,12 +195,12 @@ p {
      opacity: 1;
      z-index: 1;
     }
-}
+} */
 .mask-group img:nth-child(2) {
-    animation: 12s infinite fadeInOut2;
+    animation-delay: 4s;
 }
 .mask-group img:last-child {
-    animation: 12s infinite fadeInOut3;
+    animation-delay: 8s;
 }
 
 /* .mask-group img {
