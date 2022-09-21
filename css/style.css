@@ -89,9 +89,12 @@ p {
 .hero-description p {
     margin-bottom: 25px;
 }
-.hero-description p:last-child {
-    float: right;
+.hero-description p:nth-child(5) {
+    text-align: end;
 } 
+.hero-description a {
+    color: rgba(255, 215, 0, 1);
+}
 .hero-avatar {
     width: 409px;
     height: 367px;
@@ -257,7 +260,7 @@ p {
     .hero-description {
         margin: 0;
     }
-    .hero-description p:last-child {
+    .hero-description p:nth-child(5) {
         width: 70%;
         margin: 0 auto;
     }
