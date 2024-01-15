@@ -4,6 +4,9 @@ body {
     position: relative;
     z-index: 1;
 }
+.flex {
+    display: flex;
+}
 footer {
     content: "";
     position: relative;
@@ -59,7 +62,7 @@ p {
     align-items: center;
 }
 .flex-between {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 .social-links {
@@ -146,14 +149,25 @@ p {
     text-align: center;
 }
 .projects-container {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     margin-top: 76px;
     flex-wrap: wrap;
 }
 .image-link {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+}
+.image-link:first-child {
+    width: 525px;
+    height: 425px;
+
+}
+.image-link:nth-child(2) {
+    width: 110%;
+}
+.image-link:nth-child(3) {
+    width: 140%;
 }
 .image-link a {
     color: #fff;
@@ -165,8 +179,8 @@ p {
     color: red;
 }
 .image1 {
-    width: 366px;
-    height: 186px;
+    /* width: 366px;
+    height: 186px; */
     margin-bottom: 30px;
     margin-right: 30px;
 }
@@ -182,7 +196,7 @@ p {
     margin: 53px 0 15px;
 }
 .links {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 .links a {
@@ -218,7 +232,7 @@ p {
         text-align: center;
     }
     .projects-container {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -252,7 +266,7 @@ p {
         height: 200px;
     }
     .hero-avatar {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         height: 254px;
